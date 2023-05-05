@@ -1,6 +1,7 @@
-### Getting it running on Linux 
+# Getting it running on Linux 
 
-OS: Linux Mint 21 Vanessa, based on Ubuntu 22.04
+
+## OS: Linux Mint 21 Vanessa, based on Ubuntu 22.04
 
 Install libopencv-dev
 
@@ -11,6 +12,14 @@ Check the version
 		$ apt-cache info libopencv-dev | grep -i Version
 
 for me it was 4.5.4
+
+## OS: Fedora 35
+
+Install libopencv-dev
+
+		$ sudo dnf install opencv-devel
+
+## Version management of opencv and gocv
 
 Check https://github.com/hybridgroup/gocv/releases for a compatible version, for me it was 0.29.0.
 Modify go.mod to use that version
@@ -23,7 +32,7 @@ Ensure this version is downloaded and checksums are in place in go.sum
 
 You are now (hopefully) able to compile and run all examples.
 
-### Getting it running using Docker
+# Getting it running using Docker
 Unsolved: I am still unable to properly display a video window, general processing works
 
 Make sure that the docker image is there
